@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21stCentury Aris</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1e2a3a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+
+        /* Activity Section Styles */
+        #activity {
+            padding: 60px 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        #activity h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #1e2a3a;
+        }
+
+        /* Project Section Styles */
+        #project {
+            padding: 80px 20px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        #project h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1e2a3a;
+        }
+
+        #project-description {
+            font-size: 1.125rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 750px;
+            margin: 0 auto 30px;
+        }
+
+        #readmore {
+            display: inline-block;
+            background-color: #1e2a3a;
+            color: #fff;
+            font-size: 1.125rem;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #readmore:hover {
+            background-color: #ff6b6b;
+        }
+
+        /* Team Section Styles */
+        #team {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #team h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #1e2a3a;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+            align-items: start;
+        }
+
+        .member {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 250px; /* set the height of the member boxes */
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            transition: transform 0.3s;
+        }
+
+        .member img:hover {
+            transform: scale(1.1);
+        }
+
+        .member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .member p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team-members {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-members {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            #project h2 {
+                font-size: 2rem;
+            }
+
+            #readmore {
+                font-size: 1rem;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>21st Century G-3</h1>
+        <nav>
+            <ul>
+                <li><a href="#activity">Activity</a></li>
+                <li><a href="#team">Members</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project">
+        <div class="project-content">
+            <h2>21st Century Project</h2>
+            <p id="project-description">
+                Welcome to the 21st Century Project, where we are working on innovative solutions to modern problems...
+            </p>
+            <!-- Read More button as a link -->
+            <a href="https://en.wikipedia.org/wiki/21st_century" id="readmore" target="_blank">Read More</a>
+        </div>
+    </section>
+	
+    <section id="activity">
+        <h2>Our Group Activity</h2>
+        <p>basta activity ini ngari.</p>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <!-- Member 2 -->
+            <div class="member">
+                <img src="images/lian.jpg" alt="Lian">
+                <h3>Lian Mae Navarro Dumay</h3>
+            </div>
+            <!-- Member 3 -->
+            <div class="member">
+                <img src="images/mary.jpg" alt="Mary Rose">
+                <h3>Mary Rose Malaque</h3>
+            </div>
+            <!-- Member 4 -->
+            <div class="member">
+                <img src="images/prince.jpg" alt="Prince">
+                <h3>Prince Cortes</h3>
+            </div>
+            <!-- Member 5 -->
+            <div class="member">
+                <img src="images/ryan.jpg" alt="Ryan">
+                <h3>Ryan Padriganda</h3>
+            </div>
+            <!-- Member 6 -->
+            <div class="member">
+                <img src="images/christine.jpg" alt="Christine">
+                <h3>Christine Sarione U. Trinidad</h3>
+            </div>
+            <!-- Member 7 -->
+            <div class="member">
+                <img src="images/amanda.jpg" alt="Amanda">
+                <h3>Amanda Quigao</h3>
+            </div>
+            <!-- Member 8 -->
+            <div class="member">
+                <img src="images/andrea.jpg" alt="Andrea">
+                <h3>Andrea Buenavidez</h3>
+            </div>
+            <!-- Member 9 -->
+            <div class="member">
+                <img src="images/joshua.jpg" alt="Joshua">
+                <h3>Joshua Gary V. Uriarte</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align:center; padding: 20px; background-color: #1e2a3a; color: #fff;">
+        <p>© Copyright ni ben...asdckev ,kec ,ns cdj,dh c</p>
+        <a href="https://www.facebook.com/joshua.gary.uriarte.2024" target="_blank"
+            style="color: #fff; text-decoration: none;">facebook</a>
+    </footer>
+</body>
+
+</html>
